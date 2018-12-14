@@ -133,25 +133,7 @@ public class PlayerAI : MonoBehaviour
 
         if (controller.isGrounded && !ignoreWalls)
         {
-            //if (Physics.Raycast(transform.position + transform.up * 1, transform.forward, out ray, distance))
-            //{
-            //    if (Physics.Raycast(transform.position + transform.up * 1, transform.right * -1.3f, out ray, distance))
-            //    {
-            //        //Debug.Log("Wall Left");
-            //        // wallLeft = true;
-            //        direction += ray.normal * amount;
-            //    }
-            //}
-            ////if (Physics.Raycast(transform.position + transform.right * 1 + transform.up * 1, transform.forward, out ray, distance))
-            ////{
-            ////    direction += ray.normal  * amount;
-
-            ////}
-            ////if (Physics.Raycast(transform.position + transform.right * -1 + transform.up * 1, transform.forward, out ray, distance))
-            ////{
-            ////    direction += ray.normal * amount;
-
-            ////}
+           
             
             if (Physics.Raycast(transform.position + transform.right * 2 + transform.up * 1, transform.forward, out ray, distance))
             {
